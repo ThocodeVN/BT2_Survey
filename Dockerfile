@@ -6,7 +6,7 @@ FROM tomcat:10.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Sao chép file .war vào thư mục webapps
-COPY target/BT2_Survey-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/BT2_Survey.war
+COPY target/Survey-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/Survey.war
 
 # Expose port
 EXPOSE 8080
